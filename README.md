@@ -1,4 +1,4 @@
-# hubot-welcome
+# hubot-systemzoo-welcome
 A hubot script to greet newbies to your channel
 
 See [`src/welcome.coffee`](src/welcome.coffee) for full documentation.

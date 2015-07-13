@@ -1,8 +1,8 @@
 {
-  "name": "hubot-welcome",
+  "name": "hubot-systemzoo-welcome",
   "description": "A hubot script for welcoming new users",
   "version": "0.0.1",
-  "author": "jjasghar",
+  "author": "lazypower",
   "license": "MIT",
 
   "keywords": [
@@ -12,11 +12,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git@github.com:jjasghar/hubot-welcome.git"
+    "url": "git@github.com:chuckbutler/hubot-welcome.git"
   },
 
   "bugs": {
-    "url": "https://github.com/jjasghar/hubot-welcome/issues"
+    "url": "https://github.com/chuckbutler/hubot-welcome/issues"
   },
 
   "dependencies": {

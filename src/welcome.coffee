@@ -17,8 +17,12 @@ module.exports = (robot) ->
   robot.brain.on 'loaded', =>
     robot.brain.data.welcome ||= {}
     robot.brain.data.users ||= [ ]
+    robot.brain.data.welcomeroom || process.env.HUBOT_WELCOME_ROOM || "#systemzoo"
 
   robot.enter (msg) ->
+    monitoredroom = robot.brain.get('data.welcomeroom')
+    if msg.room != monitoredroom
+        return
     welcome = robot.brain.get('data.welcome') # pull out the welcome message
     stored_users = robot.brain.get('data.users') # get a list of the known stored users
     users = robot.brain.usersForFuzzyName("#{msg.message.user.name}") # get the user name of someone saying something
